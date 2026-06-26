@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "title": "Konsole Analyzer",
+    "description": "Extraire des informations exploitables de n'importe quel site web"
+  },
+  "home": {
+    "brandName": "Konsole Analyzer",
+    "eyebrow": "Intelligence web",
+    "processing": "Traitement en cours",
+    "report": "Rapport",
+    "timeoutError": "L'analyse a expiré. Essayez un site plus petit ou plus rapide.",
+    "title": "Extraire des informations exploitables de n'importe quel site web",
+    "subtitle": "Entrez le site web d'une entreprise pour détecter sa pile technologique, déduire son modèle économique et calculer son score d'adéquation pour votre équipe commerciale.",
+    "placeholder": "ex: https://stripe.com",
+    "button": "Analyser le site",
+    "try": "Essayez :",
+    "analyzing": "Analyse des métadonnées...",
+    "detecting": "Détection des technologies...",
+    "generating": "Génération des informations commerciales...",
+    "calculating": "Calcul des scores d'adéquation...",
+    "error": "Veuillez entrer une URL valide.",
+    "analysisFailed": "L'analyse a échoué.",
+    "unexpectedError": "Une erreur inattendue s'est produite.",
+    "analyzeAnother": "Analyser un autre",
+    "analysisResults": "Résultats de l'analyse"
+  },
+  "dashboard": {
+    "companyOverview": "Aperçu de l'entreprise",
+    "unknownCompany": "Entreprise inconnue",
+    "industry": "Industrie",
+    "businessModel": "Modèle économique",
+    "targetMarket": "Marché cible",
+    "companySize": "Taille",
+    "keyInsights": "Points clés",
+    "keyInsightsDescription": "Signaux extraits pour votre équipe commerciale",
+    "gtmSignals": "Signaux Go-to-Market",
+    "demo": "Démo",
+    "pricing": "Tarification",
+    "contactSales": "Contact ventes",
+    "freeTrial": "Essai gratuit",
+    "signup": "Inscription",
+    "detected": "Détecté",
+    "notFound": "Non trouvé",
+    "webSignals": "Signaux web",
+    "webSignalsDescription": "Données extraites directement depuis le site",
+    "internalPages": "Pages internes",
+    "externalLinks": "Liens externes",
+    "socialMedia": "Réseaux sociaux",
+    "visibleContacts": "Contacts visibles",
+    "keyMessages": "Messages clés détectés",
+    "fitScores": "Score d'adéquation ICP",
+    "fitScoresDescription": "Critères pondérés selon votre profil client idéal",
+    "overall": "Adéquation globale",
+    "criteria": "Critères de notation",
+    "criteriaColumn": "Critère",
+    "pointsColumn": "Points",
+    "matchedSignals": "Signaux correspondants",
+    "verdictTitle": "Synthèse",
+    "b2bSaas": "B2B SaaS",
+    "enterprise": "Enterprise",
+    "startup": "Startup",
+    "ecommerce": "E-commerce",
+    "segmentScores": "Scores par segment",
+    "segmentScoresHelp": "Chaque score repose sur une grille pondérée dédiée à ce profil commercial.",
+    "hunterContacts": "Contacts Hunter",
+    "noPublicEmails": "Aucun email public trouvé pour ce domaine.",
+    "discoveredLinks": "Liens & contacts découverts",
+    "discoveredLinksDescription": "Emails, téléphones, réseaux sociaux et pages de contact trouvés sur le site",
+    "emails": "Emails",
+    "phones": "Téléphones",
+    "socialProfiles": "Réseaux sociaux",
+    "contactLinks": "Liens de contact",
+    "keyPages": "Pages clés",
+    "noLinksFound": "Aucun contact public détecté sur cette page.",
+    "pattern": "Modèle",
+    "apiUsageReport": "Rapport d'utilisation des APIs",
+    "apiUsageReportDescription": "APIs utilisées et leur performance",
+    "success": "Succès",
+    "fallback": "Secours",
+    "failed": "Échoué",
+    "endpoint": "Endpoint",
+    "techStack": "Pile technologique",
+    "frontend": "Frontend",
+    "infrastructure": "Infrastructure",
+    "analytics": "Analytique",
+    "marketing": "Marketing",
+    "crm": "CRM",
+    "cms": "CMS",
+    "noneDetected": "Aucune détectée",
+    "publicContact": "Contact public",
+    "targetMarkets": {
+      "B2B": "B2B",
+      "B2C": "B2C",
+      "Enterprise": "Enterprise",
+      "SMB": "PME",
+      "Multiple": "Segments multiples"
+    },
+    "companySizes": {
+      "Startup": "Startup",
+      "Small Business": "Petite entreprise",
+      "Mid-Market": "Mid-market",
+      "Enterprise": "Grande entreprise",
+      "Unknown": "Inconnue"
+    },
+    "fitLevels": {
+      "excellent": "Excellent fit",
+      "good": "Bon fit",
+      "average": "Fit moyen",
+      "low": "Peu pertinent"
+    },
+    "socialPlatforms": {
+      "linkedin": "LinkedIn",
+      "twitter": "X / Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "github": "GitHub",
+      "tiktok": "TikTok",
+      "other": "Réseau social"
+    },
+    "pageLabels": {
+      "careers": "Carrières",
+      "pricing": "Tarifs",
+      "blog": "Blog",
+      "docs": "Documentation"
+    }
+  },
+  "scores": {
+    "criteria": {
+      "saasSector": "Secteur SaaS / Software",
+      "modernStack": "Stack moderne (React, Next.js, AWS, Vercel…)",
+      "crm": "CRM (HubSpot, Salesforce…)",
+      "largeTeam": "Plus de 50 employés",
+      "careers": "Page Carrières",
+      "pricing": "Page Tarifs publique",
+      "blog": "Blog actif",
+      "english": "Anglais comme langue principale",
+      "professionalDomain": "Domaine professionnel"
+    },
+    "fitLevels": {
+      "excellent": "Excellent fit",
+      "good": "Bon fit",
+      "average": "Fit moyen",
+      "low": "Peu pertinent"
+    },
+    "verdict": {
+      "excellent": "Très forte probabilité que cette entreprise corresponde à notre ICP.",
+      "good": "Signaux solides — probablement un bon fit pour votre approche commerciale.",
+      "average": "Signaux mitigés — à qualifier davantage avant la prise de contact.",
+      "low": "Alignement ICP limité d'après les signaux publics disponibles."
+    },
+    "positives": {
+      "b2bSaas": "B2B SaaS",
+      "largeTeam": "Plus de 50 employés",
+      "enterpriseSize": "Entreprise de grande envergure",
+      "usesTech": "Utilise {tech}",
+      "developerDocs": "Documentation développeur",
+      "publicPricing": "Tarification publique",
+      "activeHiring": "Recrute activement",
+      "international": "Présence internationale",
+      "crmUsed": "Utilise {tools}",
+      "freeTrial": "Essai gratuit disponible",
+      "demoBooking": "Prise de démo disponible",
+      "analyticsStack": "Analytique : {tool}",
+      "demoOrTrial": "Démo ou essai gratuit",
+      "contactSales": "Parcours contact ventes",
+      "enterpriseTools": "Outils enterprise",
+      "startupSize": "Profil startup / PME",
+      "modernInfra": "Infrastructure cloud moderne",
+      "shopify": "Basé sur Shopify",
+      "ecommerceModel": "Modèle e-commerce"
+    },
+    "segmentFallback": {
+      "b2b": "Peu de signaux B2B SaaS détectés.",
+      "enterprise": "Peu de signaux enterprise détectés.",
+      "startup": "Peu de signaux startup détectés.",
+      "ecommerce": "Peu de signaux e-commerce détectés."
+    },
+    "segments": {
+      "b2bSaas": {
+        "description": "Adéquation pour une motion commerciale B2B SaaS",
+        "saasModel": "Modèle SaaS / B2B",
+        "pricing": "Page tarifs publique",
+        "conversion": "Démo, essai ou inscription self-service",
+        "crmAnalytics": "Stack CRM ou analytique",
+        "devDocs": "Documentation développeur / API"
+      },
+      "enterprise": {
+        "description": "Adéquation pour une motion enterprise",
+        "teamSize": "Plus de 50 employés",
+        "contactSales": "Parcours contact ventes",
+        "enterpriseTools": "Outils enterprise",
+        "enterpriseTarget": "Marché cible enterprise"
+      },
+      "startup": {
+        "description": "Adéquation pour une motion startup / PME",
+        "startupSize": "Taille startup ou PME",
+        "modernInfra": "Infrastructure cloud moderne",
+        "modernFrontend": "Stack frontend moderne"
+      },
+      "ecommerce": {
+        "description": "Adéquation pour une motion e-commerce",
+        "ecomPlatform": "Plateforme e-commerce (Shopify…)",
+        "ecomModel": "Modèle retail / e-commerce",
+        "b2cCheckout": "Signaux B2C ou checkout"
+      }
+    }
+  },
+  "api": {
+    "urlRequired": "L'URL est requise",
+    "unexpectedError": "Une erreur inattendue s'est produite",
+    "websiteFetched": "HTML {status} récupéré depuis {domain} — {internal} liens internes, {emails} emails visibles",
+    "techDetected": "{count} signaux technologiques détectés",
+    "hunterFound": "{count} contacts publics trouvés pour {domain}",
+    "hunterNotConfigured": "HUNTER_API_KEY non configurée. Poursuite sans enrichissement Hunter.",
+    "hunterFailed": "Échec Hunter : {error}",
+    "analysisFailed": "Analyse échouée : {error}",
+    "apiNames": {
+      "websiteFetcher": "Récupération du site",
+      "technologyDetector": "Détection technologique",
+      "hunter": "Hunter Domain Search",
+      "companyEnrich": "API CompanyEnrich",
+      "overall": "Analyse globale"
+    }
+  },
+  "common": {
+    "brandName": "Konsole Analyzer",
+    "tagline": "Intelligence commerciale",
+    "loading": "Chargement...",
+    "switchToFrench": "Passer en français",
+    "switchToEnglish": "Passer en anglais",
+    "toggleLanguage": "Changer de langue",
+    "toggleTheme": "Changer de thème"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "title": "Konsole Analyzer",
+    "description": "Extract actionable intelligence from any website"
+  },
+  "home": {
+    "brandName": "Konsole Analyzer",
+    "eyebrow": "Website intelligence",
+    "processing": "Processing",
+    "report": "Report",
+    "timeoutError": "Analysis timed out. Please try a smaller or faster website.",
+    "title": "Extract Actionable Intelligence from any Website",
+    "subtitle": "Enter a company's website to detect their tech stack, infer their business model, and calculate their fit score for your sales team.",
+    "placeholder": "e.g., https://stripe.com",
+    "button": "Analyze Website",
+    "try": "Try:",
+    "analyzing": "Analyzing metadata...",
+    "detecting": "Detecting technologies...",
+    "generating": "Generating business insights...",
+    "calculating": "Calculating fit scores...",
+    "error": "Please enter a valid URL.",
+    "analysisFailed": "Analysis failed.",
+    "unexpectedError": "An unexpected error occurred.",
+    "analyzeAnother": "Analyze Another",
+    "analysisResults": "Analysis Results"
+  },
+  "dashboard": {
+    "companyOverview": "Company Overview",
+    "unknownCompany": "Unknown Company",
+    "industry": "Industry",
+    "businessModel": "Business Model",
+    "targetMarket": "Target Market",
+    "companySize": "Company size",
+    "keyInsights": "Key Insights",
+    "keyInsightsDescription": "Signals extracted for your sales team",
+    "gtmSignals": "Go-to-Market Signals",
+    "demo": "Demo",
+    "pricing": "Pricing",
+    "contactSales": "Contact Sales",
+    "freeTrial": "Free Trial",
+    "signup": "Sign Up",
+    "detected": "Detected",
+    "notFound": "Not Found",
+    "webSignals": "Web Signals",
+    "webSignalsDescription": "Data extracted directly from the website",
+    "internalPages": "Internal Pages",
+    "externalLinks": "External Links",
+    "socialMedia": "Social Media",
+    "visibleContacts": "Visible Contacts",
+    "keyMessages": "Key Messages Detected",
+    "fitScores": "ICP Fit Score",
+    "fitScoresDescription": "Weighted criteria based on your ideal customer profile",
+    "overall": "Overall Fit",
+    "criteria": "Scoring criteria",
+    "criteriaColumn": "Criterion",
+    "pointsColumn": "Points",
+    "matchedSignals": "Matched signals",
+    "verdictTitle": "Assessment",
+    "b2bSaas": "B2B SaaS",
+    "enterprise": "Enterprise",
+    "startup": "Startup",
+    "ecommerce": "E-commerce",
+    "segmentScores": "Segment scores",
+    "segmentScoresHelp": "Each score uses a dedicated weighted grid for that commercial profile.",
+    "hunterContacts": "Hunter Contacts",
+    "noPublicEmails": "No public emails found for this domain.",
+    "discoveredLinks": "Discovered links & contacts",
+    "discoveredLinksDescription": "Emails, phone numbers, social profiles and contact pages found on the site",
+    "emails": "Emails",
+    "phones": "Phone numbers",
+    "socialProfiles": "Social profiles",
+    "contactLinks": "Contact links",
+    "keyPages": "Key pages",
+    "noLinksFound": "No public contact details detected on this page.",
+    "pattern": "Pattern",
+    "apiUsageReport": "API Usage Report",
+    "apiUsageReportDescription": "Shows which APIs were used and their performance",
+    "success": "Success",
+    "fallback": "Fallback",
+    "failed": "Failed",
+    "endpoint": "Endpoint",
+    "techStack": "Technology Stack",
+    "frontend": "Frontend",
+    "infrastructure": "Infrastructure",
+    "analytics": "Analytics",
+    "marketing": "Marketing",
+    "crm": "CRM",
+    "cms": "CMS",
+    "noneDetected": "None detected",
+    "publicContact": "Public contact",
+    "targetMarkets": {
+      "B2B": "B2B",
+      "B2C": "B2C",
+      "Enterprise": "Enterprise",
+      "SMB": "SMB",
+      "Multiple": "Multiple segments"
+    },
+    "companySizes": {
+      "Startup": "Startup",
+      "Small Business": "Small business",
+      "Mid-Market": "Mid-market",
+      "Enterprise": "Enterprise",
+      "Unknown": "Unknown"
+    },
+    "fitLevels": {
+      "excellent": "Excellent fit",
+      "good": "Good fit",
+      "average": "Average fit",
+      "low": "Low relevance"
+    },
+    "socialPlatforms": {
+      "linkedin": "LinkedIn",
+      "twitter": "X / Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "github": "GitHub",
+      "tiktok": "TikTok",
+      "other": "Social"
+    },
+    "pageLabels": {
+      "careers": "Careers",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "docs": "Documentation"
+    }
+  },
+  "scores": {
+    "criteria": {
+      "saasSector": "SaaS / Software sector",
+      "modernStack": "Modern tech stack (React, Next.js, AWS, Vercel…)",
+      "crm": "CRM in use (HubSpot, Salesforce…)",
+      "largeTeam": "50+ employees",
+      "careers": "Careers page",
+      "pricing": "Public pricing page",
+      "blog": "Active blog",
+      "english": "English as primary language",
+      "professionalDomain": "Professional domain"
+    },
+    "fitLevels": {
+      "excellent": "Excellent fit",
+      "good": "Good fit",
+      "average": "Average fit",
+      "low": "Low relevance"
+    },
+    "verdict": {
+      "excellent": "Very high probability this company matches your ICP.",
+      "good": "Strong signals — likely a good fit for your sales motion.",
+      "average": "Mixed signals — worth qualifying further before outreach.",
+      "low": "Limited ICP alignment based on available public signals."
+    },
+    "positives": {
+      "b2bSaas": "B2B SaaS",
+      "largeTeam": "50+ employees",
+      "enterpriseSize": "Enterprise-scale company",
+      "usesTech": "Uses {tech}",
+      "developerDocs": "Developer documentation",
+      "publicPricing": "Public pricing",
+      "activeHiring": "Actively hiring",
+      "international": "International presence",
+      "crmUsed": "Uses {tools}",
+      "freeTrial": "Free trial available",
+      "demoBooking": "Demo booking available",
+      "analyticsStack": "Analytics: {tool}",
+      "demoOrTrial": "Demo or free trial",
+      "contactSales": "Contact sales flow",
+      "enterpriseTools": "Enterprise-grade tools",
+      "startupSize": "Startup / SMB profile",
+      "modernInfra": "Modern cloud infrastructure",
+      "shopify": "Built on Shopify",
+      "ecommerceModel": "E-commerce business model"
+    },
+    "segmentFallback": {
+      "b2b": "Limited B2B SaaS signals detected.",
+      "enterprise": "Limited enterprise signals detected.",
+      "startup": "Limited startup signals detected.",
+      "ecommerce": "Limited e-commerce signals detected."
+    },
+    "segments": {
+      "b2bSaas": {
+        "description": "Fit for a B2B SaaS sales motion",
+        "saasModel": "SaaS / B2B business model",
+        "pricing": "Public pricing page",
+        "conversion": "Demo, trial or self-service signup",
+        "crmAnalytics": "CRM or analytics stack",
+        "devDocs": "Developer docs / API"
+      },
+      "enterprise": {
+        "description": "Fit for an enterprise sales motion",
+        "teamSize": "50+ employees",
+        "contactSales": "Contact sales flow",
+        "enterpriseTools": "Enterprise-grade tools",
+        "enterpriseTarget": "Enterprise target market"
+      },
+      "startup": {
+        "description": "Fit for a startup / SMB motion",
+        "startupSize": "Startup or SMB size",
+        "modernInfra": "Modern cloud infrastructure",
+        "modernFrontend": "Modern frontend stack"
+      },
+      "ecommerce": {
+        "description": "Fit for an e-commerce motion",
+        "ecomPlatform": "E-commerce platform (Shopify…)",
+        "ecomModel": "Retail / e-commerce model",
+        "b2cCheckout": "B2C or checkout signals"
+      }
+    }
+  },
+  "api": {
+    "urlRequired": "URL is required",
+    "unexpectedError": "An unexpected error occurred",
+    "websiteFetched": "Fetched {status} HTML from {domain} with {internal} internal links and {emails} visible emails",
+    "techDetected": "Detected {count} technology signals",
+    "hunterFound": "Found {count} public contacts for {domain}",
+    "hunterNotConfigured": "HUNTER_API_KEY not configured. Continuing without Hunter enrichment.",
+    "hunterFailed": "Hunter enrichment failed: {error}",
+    "analysisFailed": "Analysis failed: {error}",
+    "apiNames": {
+      "websiteFetcher": "Website Fetcher",
+      "technologyDetector": "Technology Detector",
+      "hunter": "Hunter Domain Search",
+      "companyEnrich": "CompanyEnrich API",
+      "overall": "Overall Analysis"
+    }
+  },
+  "common": {
+    "brandName": "Konsole Analyzer",
+    "tagline": "Sales intelligence",
+    "loading": "Loading...",
+    "switchToFrench": "Switch to French",
+    "switchToEnglish": "Switch to English",
+    "toggleLanguage": "Toggle language",
+    "toggleTheme": "Toggle theme"
+  }
+}
