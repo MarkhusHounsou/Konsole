@@ -167,6 +167,7 @@
       radial-gradient(ellipse 90% 60% at 50% -30%, oklch(0.12 0 0 / 4%), transparent 55%),
       radial-gradient(circle at 1px 1px, oklch(0.12 0 0 / 3.5%) 1px, transparent 0);
     background-size: auto, 28px 28px;
+    animation: gridMove 30s linear infinite;
   }
 
   .dark .app-canvas::before {
@@ -174,6 +175,26 @@
       radial-gradient(ellipse 90% 60% at 50% -30%, oklch(0.97 0 0 / 5%), transparent 55%),
       radial-gradient(circle at 1px 1px, oklch(0.97 0 0 / 4%) 1px, transparent 0);
     background-size: auto, 28px 28px;
+    animation: gridMove 30s linear infinite;
+  }
+
+  @keyframes gridMove {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 0 0, 0 28px; }
+  }
+
+  @keyframes pulseBorder {
+    0%, 100% { border-color: oklch(0.9 0 0); }
+    50% { border-color: oklch(0.12 0 0 / 30%); }
+  }
+
+  .dark @keyframes pulseBorder {
+    0%, 100% { border-color: oklch(1 0 0 / 11%); }
+    50% { border-color: oklch(0.97 0 0 / 30%); }
+  }
+
+  .pulse-border {
+    animation: pulseBorder 3s ease-in-out infinite;
   }
 
   .app-canvas > * {

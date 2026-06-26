@@ -2,8 +2,8 @@
 
 > Un outil d'analyse web léger qui transforme n'importe quelle URL en intelligence commerciale exploitable : profil d'entreprise, pile technique, signaux de mise en marché et score d'adéquation ICP, en quelques secondes.
 
-**Démo en direct → [votre-url.vercel.app]**
-**GitHub → [votre-url-github]**
+**Démo en direct → https://konsole-analyzer.netlify.app**
+**GitHub → https://github.com/MarkhusHounsou/Konsole.git**
 
 ---
 
@@ -58,8 +58,8 @@ L'interface est disponible en EN/FR. Les fichiers de traduction se trouvent dans
 ### 1. Cloner et Installer
 
 ```bash
-git clone https://github.com/votre-organisation/konsole.git
-cd konsole
+git clone https://github.com/MarkhusHounsou/Konsole.git
+cd Konsole
 npm install
 ```
 
