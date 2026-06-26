@@ -152,9 +152,17 @@ function extractEmails(text: string): string[] {
 }
 
 function extractPhones(text: string): string[] {
-  return unique(text.match(/(?:\+\d{1,3}[\s.-]?)?(?:\(?\d{1,4}\)?[\s.-]?){3,}\d{2,4}/g) || [])
+  // More specific regex for phone numbers - avoids matching random numbers like 202599.999
+  const phoneRegex = /(?:\+\d{1,3}[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}|(?:\d{2,4}[\s.-]){2,4}\d{2,4})\b/g;
+  const matches = text.match(phoneRegex) || [];
+  
+  return unique(matches)
     .map((phone) => phone.trim())
-    .filter((phone) => phone.replace(/\D/g, '').length >= 8)
+    .filter((phone) => {
+      const digits = phone.replace(/\D/g, '');
+      // Must have at least 8 digits, and should NOT look like a decimal number or year
+      return digits.length >= 8 && !phone.includes('.') && !/^20[1-3]\d/.test(digits);
+    })
     .slice(0, 10);
 }
 

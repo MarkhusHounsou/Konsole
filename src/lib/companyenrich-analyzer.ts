@@ -147,12 +147,6 @@ function parseCompanyEnrichData(enrichedData: CompanyEnrichData, data: WebsiteDa
   if (enrichedData?.founded) {
     keyInsights.push(`Founded: ${enrichedData.founded}`);
   }
-  if (enrichedData?.employees) {
-    keyInsights.push(`Team Size: ${enrichedData.employees} employees`);
-  }
-  if (enrichedData?.revenue) {
-    keyInsights.push(`Revenue: ${enrichedData.revenue}`);
-  }
   if (industry) {
     keyInsights.push(`Industry: ${industry}`);
   }
@@ -257,16 +251,28 @@ function extractCompanyName(_titleLower: string, originalTitle: string): string 
 }
 
 function estimateCompanySize(content: string): 'Startup' | 'Small Business' | 'Mid-Market' | 'Enterprise' | 'Unknown' {
+  if (content.includes('enterprise') || content.includes('global') || content.includes('1000+') || content.includes('thousands of') || content.includes('fortune') || content.includes('public company') || content.includes('multinational')) {
+    return 'Enterprise';
+  }
   if (content.includes('startup') || content.includes('founded recently')) {
     return 'Startup';
-  }
-  if (content.includes('enterprise') || content.includes('global') || content.includes('1000+')) {
-    return 'Enterprise';
   }
   if (content.includes('team of')) {
     const match = content.match(/team of (\d+)/);
     if (match) {
       const num = parseInt(match[1]);
+      if (num > 500) return 'Enterprise';
+      if (num > 100) return 'Mid-Market';
+      if (num > 20) return 'Small Business';
+      return 'Startup';
+    }
+  }
+  // Check for other employee number mentions
+  const employeeMatch = content.match(/\b(\d[\d,.\s]*)\+?\s*employees?\b/i);
+  if (employeeMatch) {
+    const raw = employeeMatch[1];
+    const num = parseInt(raw.replace(/[^\d]/g, ''), 10);
+    if (!isNaN(num)) {
       if (num > 500) return 'Enterprise';
       if (num > 100) return 'Mid-Market';
       if (num > 20) return 'Small Business';
@@ -472,7 +478,7 @@ function mapCompanySize(sizeStr?: string): 'Startup' | 'Small Business' | 'Mid-M
   }
 
   const lower = String(sizeStr).toLowerCase();
-  if (lower.includes('enterprise') || lower.includes('global')) return 'Enterprise';
+  if (lower.includes('enterprise') || lower.includes('global') || lower.includes('large') || lower.includes('1000')) return 'Enterprise';
   if (lower.includes('startup')) return 'Startup';
 
   return 'Unknown';

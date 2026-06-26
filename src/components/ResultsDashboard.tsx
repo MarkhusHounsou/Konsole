@@ -390,47 +390,7 @@ export function ResultsDashboard({ data }: { data: AnalysisResponse }) {
         </DashboardPanel>
       )}
 
-      {data.apiUsageReport && data.apiUsageReport.length > 0 && (
-        <DashboardPanel title={t("apiUsageReport")} description={t("apiUsageReportDescription")}>
-          <div className="space-y-2.5">
-            {data.apiUsageReport.map((report, idx) => {
-              const statusLabels: Record<string, string> = {
-                success: t("success"),
-                fallback: t("fallback"),
-                failed: t("failed"),
-              }
 
-              return (
-                <div
-                  key={idx}
-                  className={cn(
-                    "flex items-start justify-between gap-4 rounded-lg border px-4 py-3.5",
-                    report.status === "success" && "border-foreground/25 bg-foreground/[0.03]",
-                    report.status === "fallback" && "border-border bg-muted/25",
-                    report.status === "failed" && "border-foreground/10 bg-muted/15 opacity-80"
-                  )}
-                >
-                  <div className="min-w-0 flex-1">
-                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
-                      <span className="text-sm font-medium">{report.apiName}</span>
-                      <Badge
-                        variant={report.status === "success" ? "default" : "outline"}
-                        className="font-mono text-[0.62rem] uppercase tracking-wider"
-                      >
-                        {statusLabels[report.status]}
-                      </Badge>
-                    </div>
-                    <p className="text-xs leading-relaxed text-muted-foreground">{report.message}</p>
-                  </div>
-                  {report.duration && (
-                    <p className="shrink-0 font-mono text-xs text-muted-foreground">{report.duration}ms</p>
-                  )}
-                </div>
-              )
-            })}
-          </div>
-        </DashboardPanel>
-      )}
 
       <DashboardPanel title={t("techStack")}>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
